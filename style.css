@@ -18,7 +18,13 @@ body {
 .menu__web {
     display: flex;
     gap: 20px;
+    background-color: #eff6f7;
 }
+
+.body_menu {
+    background-color: rgb(232, 236, 239);
+}
+
 .subtitle__services {
     display: grid;
     align-items: center;
@@ -34,7 +40,7 @@ body {
 }
 .scroller_items:hover {
     border: 1px solid #35cfeb;
-    background-color: white;
+    background-color: rgba(210, 201, 201, 0.501);
 }
 
 .scroller_items {
@@ -43,16 +49,26 @@ body {
    overflow-x: auto;
    white-space: nowrap;
    gap: 20px;
+   overflow: hidden
 }
+
 .menu_item {
    color: #747272;
    display: flex;
    padding: 0.5rem 1.25rem;
    text-decoration: none;
 }
+
+.text_description {
+   
+}
+.logo__copy {
+    width: 100%;
+}
+
 @media (max-width: 768px;) {
     .scroller_items {
-        grid-template-columns: 2;
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media (min-width: 768px;) and (max-width: 1120px){
@@ -64,10 +80,4 @@ body {
     .company {
         grid-template-columns: 1;
     }
-}
-.text_description {
-    min-width: 320px;
-}
-.picture_copy {
-    max-width: 100%;
 }
