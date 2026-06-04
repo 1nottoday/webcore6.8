@@ -1,8 +1,8 @@
 @font-face {
     font-family: "TTLakes";
-  src: url("./font/TTLakes-ExtraLight.ttf") format("truetype")
-  font-weight: normal;
-  font-style: normal;
+    src: url("./font/TTLakes-ExtraLight.ttf") format("truetype")
+    font-weight: normal;
+    font-style: normal;
 }
 * {
     box-sizing: border-box;
@@ -14,6 +14,10 @@
     width: 100%;
     margin: 0 auto;
     padding: 16px;
+}
+.web_inside {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .menu__web {
@@ -74,50 +78,185 @@
 }
 
 .scroller_items {
-  display: flex;
-  gap: 8px;
-  padding: 0 16px;
-  margin: 0;
-  list-style: none;
-  overflow-x: auto;
+    display: flex;
+    gap: 8px;
+    padding: 0 16px;
+    margin: 0;
+    list-style: none;
+    overflow-x: auto;
 }
 
 .scroller_items::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .menu_item {
-   display: block;
-   padding: 8px 16px;
-   font-size: 16px;
-   line-height: 24px;
-   color: #7e7e82;
-   text-decoration: none;
-   white-space: nowrap;
-   border: 1px solid transparent;
-   border-radius: 6px;
+    display: block;
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7e7e82;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    border-radius: 6px;
 }
 .menu_item:hover {
     border-color: #b8ffec;
     background-color: white;
 }
 
+.company {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.services__main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.text_mobile {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #1b1c21;
+    margin: 0 0 16px 0;
+}
+.text_planshet {
+    display: none;
+}
+.text_web {
+    display: none;
+}
+.read_more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1b1c21;
+    text-decoration: none;
+}
+.services__more-link::before {
+    content: "︾";
+    color: #ff3e79;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* 
+ picture_copy 
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    gap: 20px;*/
+
 .logo__copy {
+    display: block;
     width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.logo__copy3 {
+    display: none;
 }
 
-max-width: 768px; {
+
+min-width: 768px; {
+    .webcore {
+       padding: 24px;
+   }
+   .scroll_menu {
+       margin-left: -24px;
+       margin-right: -24px;
+   }
+   .scroller_items {
+       padding: 0 24px;
+   }
+   .logo_web2 {
+       display: flex;
+       gap: 16px;
+   }
+   .company {
+       flex-direction: row;
+       align-items: center;
+       gap: 24px;
+   }
+   .services__main {
+       flex: 1;
+   }
+   .text_planshet {
+       display: block;
+   }
+   .picture_copy {
+       flex: 1;
+   }
+   .text_planshet {
+       display:block;
+       font-size: 14px;
+       line-height: 1.5;
+       color: #1b1c21;
+       margin: 0 0 16px 0;
+   }
+
+min-width: 1120px 
+    .web_inside {
+       max-width: 1120px;
+       margin: 0 auto;   
+    }
+    .logo_web1 {
+       display: none;  
+    }
+    .logo_web2 {
+       display: none;
+    }
+    .menu__web {
+       justify-content: flex-end;
+       margin-bottom: 32px;   
+    }
+    .logo_1 {
+       gap: 8px;   
+    }
+    .logotext_1 {
+       display: inline;
+       font-size: 16px;
+       font-weight: 500;
+       color: #1b1c21;  
+    }
+    .logotext_mobile1 {
+       width: auto;
+       height: auto;  
+    }
+    .scroll_menu {
+       margin-left: 0;
+       margin-right: 0;
+       margin-bottom: 32px;
+    }
     .scroller_items {
-        grid-template-columns: 1fr 1fr;
+       padding: 0;   
     }
-}
-min-width: 768px; and (max-width: 1120px){
-    .company {
-        grid-template-columns: 1;
+   .company {
+       flex-direction: row;
+       align-items: center;
+       gap: 24px;
+   }
+    .logo__copy {
+        display: none;
     }
-}
-min-width: 1120px; and (max-width:100%){
-    .company {
-        grid-template-columns: 1;
+    .logo__copy3 {
+        display: block;
     }
-}
+    .text_planshet {
+       display:block;
+       font-size: 14px;
+       line-height: 1.5;
+       color: #1b1c21;
+       margin: 0 0 16px 0;
+   }
+   .text_web {
+       display:block;
+       font-size: 14px;
+       line-height: 1.5;
+       color: #1b1c21;
+       margin: 0 0 16px 0;
+   }
