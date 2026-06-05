@@ -2,8 +2,8 @@
     font-family: "TTLakes";
     src: url("./font/TTLakes-ExtraLight.ttf")
     font-weight: normal;
-    font-style: normal;
 }
+
 * {
     box-sizing: border-box;
     font-family: "TTLakes";
@@ -186,10 +186,12 @@
    }
    .logo_web2 {
        display: flex;
+       justify-content: flex-end;
        gap: 16px;
    }
    .divider {
        display: flex;
+       justify-content:flex-start;
        gap: 16px;
    }
    .company {
