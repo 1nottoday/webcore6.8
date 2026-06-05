@@ -1,6 +1,6 @@
 @font-face {
     font-family: "TTLakes";
-    src: url("./font/TTLakes-ExtraLight.ttf") format("truetype")
+    src: url("./font/TTLakes-ExtraLight.ttf")
     font-weight: normal;
     font-style: normal;
 }
@@ -31,8 +31,14 @@
     align-items: center;
     gap: 16px;
 }
+
 .logo_web2 {
     display: none;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 .logo_web3 {
     display: flex;
@@ -51,7 +57,8 @@
     background: none;
     border: none;
     padding: 0;
-    cursor: pointer; 
+    cursor: pointer;
+    gap: 16px; 
 }
 .logotext_1 {
     display: none;
@@ -145,7 +152,7 @@
     font-weight: bold;
 }
 /* 
- picture_copy 
+ picture_copy 
     display: flex;
     flex-direction: row-reverse; 
     align-items: center;
@@ -160,9 +167,13 @@
 .logo__copy3 {
     display: none;
 }
+ @media (max-width: 320px) {
+    .logo_web2 {
+        display: none;
+    }
+}
 
-
-min-width: 768px; {
+@media (min-width: 768px;) and (max-width: 1120px){
     .webcore {
        padding: 24px;
    }
@@ -174,6 +185,10 @@ min-width: 768px; {
        padding: 0 24px;
    }
    .logo_web2 {
+       display: flex;
+       gap: 16px;
+   }
+   .divider {
        display: flex;
        gap: 16px;
    }
@@ -198,8 +213,8 @@ min-width: 768px; {
        color: #1b1c21;
        margin: 0 0 16px 0;
    }
-
-min-width: 1120px 
+}
+@media (min-width: 1120px) {
     .web_inside {
        max-width: 1120px;
        margin: 0 auto;   
@@ -210,8 +225,14 @@ min-width: 1120px
     .logo_web2 {
        display: none;
     }
+    .logo_web3{
+        gap: 16px;
+    }
     .menu__web {
-       justify-content: flex-end;
+       justify-content:
+
+
+flex-end;
        margin-bottom: 32px;   
     }
     .logo_1 {
@@ -230,7 +251,7 @@ min-width: 1120px
     .scroll_menu {
        margin-left: 0;
        margin-right: 0;
-       margin-bottom: 32px;
+       margin-bottom: 0;
     }
     .scroller_items {
        padding: 0;   
@@ -241,11 +262,9 @@ min-width: 1120px
        gap: 24px;
    }
     .logo__copy {
-        display: none;
-    }
-    .logo__copy3 {
         display: block;
     }
+    
     .text_planshet {
        display:block;
        font-size: 14px;
@@ -260,3 +279,7 @@ min-width: 1120px
        color: #1b1c21;
        margin: 0 0 16px 0;
    }
+   .divider {
+       display: none;
+   }
+}
