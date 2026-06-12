@@ -1,15 +1,15 @@
 @font-face {
-    font-family: "TTLakes";
-    src: url("./font/TTLakes-ExtraLight.ttf")
-    font-weight: normal;
+  font-family: "TTLakes";
+  src: url("./font/TTLakes-ExtraLight.ttf");
+  font-weight: normal;
 }
 
 * {
-    box-sizing: border-box;
-    font-family: "TTLakes";
-    background-color: rgb(246, 249, 252);
+  box-sizing: border-box;
+  font-family: "TTLakes";
+  background-color: rgb(246, 249, 252);
 }
-.webcore {
+body {
     min-width: 320px;
     width: 100%;
     margin: 0 auto;
@@ -22,9 +22,10 @@
 
 .menu__web {
     display: flex;
-    justify-content: space-between;
+    gap: 20px; 
     align-items: center;
     margin-bottom: 24px;
+    padding: 10px 24px;
 }
 .logo_web1 {
     display: flex;
@@ -35,14 +36,22 @@
 .logo_web2 {
     display: none;
 }
-.divider {
+.divider1 {
     display: flex;
     align-items: center;
     gap: 16px;
 }
+.divider2 {
+    display: none;
+}
+.divider3 {
+    display: none;
+}
 .logo_web3 {
     display: flex;
+    align-items: center;
     gap: 16px;
+    margin-left: auto; 
 }
 
 .logo {
@@ -145,19 +154,13 @@
     color: #1b1c21;
     text-decoration: none;
 }
-.services__more-link::before {
-    content: "︾";
-    color: #ff3e79;
-    font-size: 12px;
-    font-weight: bold;
+ 
+.picture_copy {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
 }
-/* 
- picture_copy 
-    display: flex;
-    flex-direction: row-reverse; 
-    align-items: center;
-    gap: 20px;*/
-
 .logo__copy {
     display: block;
     width: 100%;
@@ -173,7 +176,7 @@
     }
 }
 
-@media (min-width: 768px;) and (max-width: 1120px){
+@media (min-width: 768px) and (max-width: 1120px){
     .webcore {
        padding: 24px;
    }
@@ -188,11 +191,21 @@
        display: flex;
        justify-content: flex-end;
        gap: 16px;
+       margin-left: 455px;
    }
-   .divider {
+   .divider3 {
        display: flex;
        justify-content:flex-start;
        gap: 16px;
+       margin-left: 15px; 
+   }
+   .divider2{
+       display: flex;
+       justify-content:flex-start;
+       gap: 16px;
+   }
+   .divider1 {
+    display: none;
    }
    .company {
        flex-direction: row;
@@ -201,12 +214,13 @@
    }
    .services__main {
        flex: 1;
-   }
-   .text_planshet {
-       display: block;
+       padding-left: 20px;
    }
    .picture_copy {
-       flex: 1;
+       padding-right: 20px;
+       padding-top: 20px;
+       width: 360px;
+       height: 280px;
    }
    .text_planshet {
        display:block;
@@ -231,10 +245,7 @@
         gap: 16px;
     }
     .menu__web {
-       justify-content:
-
-
-flex-end;
+       justify-content: flex-end;
        margin-bottom: 32px;   
     }
     .logo_1 {
@@ -281,7 +292,14 @@ flex-end;
        color: #1b1c21;
        margin: 0 0 16px 0;
    }
-   .divider {
+   .divider1 {
        display: none;
+   }
+   .divider2 {
+       display: none;
+   }
+   .picture_copy {
+       padding-right: 20px;
+       padding-top: 20px;
    }
 }
