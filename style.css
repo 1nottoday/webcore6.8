@@ -141,7 +141,7 @@ body {
 .menu_item:hover {
     border-color: #b8ffec;
     background-color: white;
-    
+
 }
 
 .company {
@@ -205,8 +205,7 @@ body {
        padding: 24px;
    }
    .scroll_menu {
-       margin-left: -24px;
-       margin-right: -24px;
+       
    }
    .scroller_items {
        padding: 0 24px;
@@ -268,10 +267,14 @@ body {
    }
 }
 @media (min-width: 1120px) {
+    .scroller_items { 
+        flex-wrap: wrap;
+    } 
     .web_inside {
        max-width: 1120px;
        margin: 0 auto;   
     }
+
     .logo_web1 {
        display: none;  
     }
